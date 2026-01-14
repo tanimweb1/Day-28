@@ -82,21 +82,23 @@ int n,price,sum=0;
 scanf("%d",&n);
 
 
-if(n>0&& n<=100){
+if(n>0 && n<=100){
   price = 5;
   sum = n*price;
 printf("Total is = %d",sum);
 }
-if(n<=200&& n>100){
+if(n>100 && n<=200){
   price = 7;
   sum = n*price;
 printf("Total is = %d",sum);
 }
-else{
+else if(n>200){
   sum = n*10;
   printf("Total is = %d",sum);
 }
-
+else{
+  printf("Not a valid bill");
+}
     
 
     
@@ -105,6 +107,7 @@ else{
     return 0;
 
 }
+
 
 
 
