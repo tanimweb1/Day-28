@@ -74,12 +74,38 @@ else {
 
 
 
+
+
+// Electricity Bill Calculator
+
+int n,price,sum=0;
+scanf("%d",&n);
+
+
+if(n>0&& n<=100){
+  price = 5;
+  sum = n*price;
+printf("Total is = %d",sum);
+}
+if(n<=200&& n>100){
+  price = 7;
+  sum = n*price;
+printf("Total is = %d",sum);
+}
+else{
+  sum = n*10;
+  printf("Total is = %d",sum);
+}
+
+    
+
     
     
 
     return 0;
 
 }
+
 
 
 
